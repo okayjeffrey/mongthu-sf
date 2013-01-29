@@ -1,29 +1,28 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Muli:300,400,300italic,400italic);
 
 html,
 button,
 input,
 select,
 textarea {
+/*    font-family:Muli, Arial, sans-serif;	*/
+/*	font-family: 'Quicksand', sans-serif;*/
+/*	font-family: 'Ubuntu', sans-serif;*/
 }
 body {
-    -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: none;
-  background: #eee url(../img/background.png) repeat 0 0;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  transition: background 5s;
-  -moz-transition: background 5s;
-  color: #616161; /*#4d4d4d;*/
-  text-shadow: 0 2px 0 #fff;
-  /* Firefox 4 */
-
-  -webkit-transition: background 5s;
-  /* Safari and Chrome */
-
-  -o-transition: background 5s;
-  /* Opera */
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: none;
+	background: #eee url(../img/background.png) repeat 0 0;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:400;
+	line-height: 1.2;
+	color: #616161; /*#4d4d4d;*/
+/*	text-shadow: 0 2px 0 #fff;*/
+/*	transition: background 5s;*/
+/*	-moz-transition: background 5s;*/
+/*	-webkit-transition: background 5s;*/
+/*	-o-transition: background 5s;*/
 }
 
 ::-moz-selection {
@@ -186,9 +185,15 @@ margin: auto;
 }
 
 .main {
-  width:300px;
-  margin:30px auto;
+/*  width:400px;*/
+  margin:50px auto;
 } 
+
+.logo {
+	width:300px;
+	margin:auto;
+	margin-bottom:40px;
+}
 
 .animated {
 	-webkit-animation-duration: 1s;
@@ -334,17 +339,15 @@ margin: auto;
     body {font-size:18px;}
     
     .main {margin-top:20px;}
-        
-    #shirt {
-        background: #87dec3 url(../img/ladybug_shirt.png) no-repeat 50% 20%;
-        box-shadow: inset 0px 0px 20px #CCC;
-        margin:25px 0 0 0;
-    }
-    
-    footer {
-        margin-top:0px;
-        padding:0 20% !important;
-    }
+	
+	.logo {
+		margin-bottom:20px;
+	}
+	
+	.logo svg {
+		height:250px;
+	}
+
 
 }
 
