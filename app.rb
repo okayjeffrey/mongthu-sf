@@ -1,62 +1,9 @@
-require 'rubygems'
+require './environment'
 require 'sinatra'
 require 'thin'
-require 'data_mapper'
-require 'do_sqlite3'
-
-# require 'sinatra/flash'
-# require 'sinatra/redirect_with_flash'
-
-# enable :sessions
-# use Sinatra::Flash, :sweep => true
-	
-# Bundler.require
-# require 'dm-core'
-# require 'dm-timestamps'
-# require 'dm-validations'
-# require 'dm-migrations'
-
-
-DataMapper.setup :default, "sqlite://#{Dir.pwd}/menu.db"
-
-class Soups
-  include DataMapper::Resource
-  property :id, Serial
-  property :number, String, :required => true
-  property :title,  Text,  :required => true
-  property :price, String, :required => true
-  property :description, Text, :required => false
-  property :image,  String,  :required => false
-  property :created_at, DateTime
-  property :updated_at, DateTime
-end
-
-class Sandwiches
-  include DataMapper::Resource
-  property :id, Serial
-  property :number, String, :required => true
-  property :title,  Text,  :required => true
-  property :price, String, :required => true
-  property :description, Text, :required => false
-  property :image,  String,  :required => false
-  property :created_at, DateTime
-  property :updated_at, DateTime
-end
-
-class Desserts
-  include DataMapper::Resource
-  property :id, Serial
-  property :number, String, :required => false
-  property :title,  Text,  :required => true
-  property :price, String, :required => true
-  property :description, Text, :required => true
-  property :image,  String,  :required => false
-  property :created_at, DateTime
-  property :updated_at, DateTime
-end
 
 configure :development do  
-DataMapper.auto_upgrade!
+  DataMapper.auto_upgrade!
 end
   
 before do
@@ -66,9 +13,9 @@ helpers do
 end
 
 get '/' do
-  @soups = Soups.all :order => :number.asc
-  @sandwiches = Sandwiches.all :order => :number.asc
-  @desserts = Desserts.all :order => :number.asc
+  @soups = Soup.all :order => :number.asc
+  @sandwiches = Sandwich.all :order => :number.asc
+  @desserts = Dessert.all :order => :number.asc
     
   erb :home
 end
