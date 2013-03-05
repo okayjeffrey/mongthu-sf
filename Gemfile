@@ -2,7 +2,13 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'thin'
 gem 'data_mapper'
-gem 'dm-sqlite-adapter'
-gem 'do_sqlite3'
+
+group :production do
+  gem 'dm-postgres-adapter'
+end
+group :development do
+  gem 'dm-sqlite-adapter'
+  gem 'do_sqlite3'
+end
 # gem 'sinatra-flash'
 # gem 'sinatra-redirect-with-flash'
