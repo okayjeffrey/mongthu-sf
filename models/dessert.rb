@@ -1,4 +1,4 @@
-class Desserts
+class Dessert
   include DataMapper::Resource
   property :id, Serial
   property :number, String, :required => false
