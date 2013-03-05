@@ -64,9 +64,9 @@ helpers do
 end
 
 get '/' do
-  @soups = Soups.all :order => :number.desc
-  @sandwiches = Sandwiches.all :order => :number.desc
-  @desserts = Desserts.all :order => :number.desc
+  @soups = Soups.all :order => :number.asc
+  @sandwiches = Sandwiches.all :order => :number.asc
+  @desserts = Desserts.all :order => :number.asc
     
   erb :home
 end
@@ -74,7 +74,7 @@ end
 # ------------ SOUPS
 
 get '/soups' do    
-  @soups = Soups.all(:order => [ :number.desc ])
+  @soups = Soups.all(:order => [ :id.desc ])
 	if @soups.empty?
 		flash[:error] = 'No Soups found. Add your first below.'
 	end
@@ -103,7 +103,7 @@ end
 # ------------ Sandwiches
 
 get '/sandwiches' do    
-  @sandwiches = Sandwiches.all(:order => [ :number.asc ])
+  @sandwiches = Sandwiches.all(:order => [ :id.asc ])
 	if @sandwiches.empty?
 		flash[:error] = 'No Sandwiches found. Add your first below.'
 	end

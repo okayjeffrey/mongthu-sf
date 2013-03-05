@@ -9,7 +9,7 @@
                 <span>
                     <!-- <%= soups.number %> -->
                     <strong><%= soups.title %></strong>
-                    <%= soups.price %> <span class="picture tooltip hide-text" title="<img src='http://placekitten.com/200/200'/>">pic</span>
+                   &mdash; &#36;<%= soups.price %> <span class="picture tooltip hide-text" title="<img src='http://placekitten.com/200/200'/>">pic</span>
                     
                     <p><%= soups.description %></p>
                 </span>
@@ -29,7 +29,7 @@
                 <span>
                     <!-- <%= sandwiches.number %> -->
                     <strong><%= sandwiches.title %></strong>
-                    <%= sandwiches.price %>
+                    &mdash; &#36;<%= sandwiches.price %>
                     <p><%= sandwiches.description %></p>
                 </span>
             </li>
@@ -43,7 +43,7 @@
         <% @desserts.each do |desserts| %>
             <li>
               <strong><%= desserts.title %></strong>
-              <%= desserts.price %>
+              &mdash; &#36;<%= desserts.price %>
               <p><%= desserts.description %></p>
             </li>
         <% end %>
