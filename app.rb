@@ -2,13 +2,14 @@ require 'rubygems'
 require 'sinatra'
 require 'thin'
 require 'data_mapper'
+require 'do_sqlite3'
 # require 'sinatra/flash'
 # require 'sinatra/redirect_with_flash'
 
 # enable :sessions
 # use Sinatra::Flash, :sweep => true
 	
-Bundler.require
+# Bundler.require
 # require 'dm-core'
 # require 'dm-timestamps'
 # require 'dm-validations'
