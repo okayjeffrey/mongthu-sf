@@ -1,0 +1,172 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Muli:300,400,300italic,400italic);
+
+@teal:#00a7ab;
+
+body {
+    -webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: none;
+/*    background: #fff url(../img/mongthu_frame.png) no-repeat 50% 0;*/
+    font-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:400;
+	line-height: 1.2;
+	color: #504c4b; /*#4d4d4d;*/
+    margin:0;
+}
+
+.hide-text {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+    color:@teal;
+    text-transform:uppercase;
+    margin-top:0;
+}
+
+ol, ul {
+    list-style-position:outside;
+    padding:0;
+    font-weight:bold;
+    
+    li {
+        span { font-weight:normal; }
+    }
+}
+
+    .info {
+        background:#d8f1f2;
+/*        margin:auto;*/
+        text-align:center;
+        padding:20px 10%;
+        text-transform:uppercase;
+        color:@teal;
+        font-weight:700;
+        letter-spacing:0.3em;
+        font-size:0.90em;
+        
+        span {
+            margin:0 20px;
+            display: inline-block;
+            line-height:2em;
+        }
+    }
+
+header {
+    
+    /*    background:#d8f1f2;*/
+    background: #000 url(../img/soup-hero.png) no-repeat 0 0; 
+    background-size: cover;
+    /*    height:420px;*/
+    padding-top:75px;
+    /*margin-bottom:60px;*/
+    
+    
+    #logo {
+        height:202px;
+        width:202px;
+        background: transparent url(../img/MongThu-logo.png) no-repeat 50% 0;
+        margin:0 auto 75px auto;
+    }
+
+}
+
+#main {
+    width:80%;
+    background: rgba(255, 255, 255, 0.8);
+    padding:0 10%;
+    
+    p {
+        margin:0 0 1em 0;
+    }
+
+    section.menu {
+        max-width:910px;
+        margin: 0 auto;
+        
+        article {
+            margin-top:30px;
+
+            @media screen and (min-width: 400px){
+                margin-top:60px;
+            }
+            
+            &.sandwiches {
+                float: left;
+                width: 45%;
+                min-width: 270px;  
+            }
+            
+            &.soups {
+                .sandwiches;        
+                margin-right: 10%;
+            }
+            
+            &.desserts {
+                float:left;
+                clear:both;
+                width:100%;
+                
+                ul { 
+                    @media screen and (min-width: 400px){
+                    -webkit-column-count:2;
+                    -webkit-column-gap:60px;
+                    }
+                                        
+                    li {
+                        -webkit-column-break-inside:avoid;
+                    }
+                }            
+            }
+            
+            &:last-child {
+                margin-bottom:40px;
+                @media screen and (min-width: 400px){
+                    margin-bottom:60px;
+                }
+            }
+            
+            .picture {
+                background: transparent url(../img/icon-photo.png) no-repeat 50% 50%;
+                display:inline-block; 
+                width:20px;
+                opacity:0.8;
+                
+                &:hover {
+                    opacity:1.0;
+                }
+            }
+            
+            img.soups {
+/*                display:none;*/
+            }
+        }
+        
+        ul {
+            list-style:none;
+            font-weight:normal;
+        }
+    }
+}
+
+footer {
+    clear:both;
+    .mindful { .info; padding:35px 10%; letter-spacing:0.27em; line-height: 1.6em;}
+ 
+    .social {
+        padding:40px 0;
+        text-align:center;
+        
+        a { }
+        img {margin:1em 30px; vertical-align:middle;}
+    }
+        
+    .vietnam{ 
+        background-color: #91857f;
+        color:#fff;
+        padding:50px 0;
+        text-align:center;
+    }
+}

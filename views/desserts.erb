@@ -1,0 +1,27 @@
+<% if flash[:notice] %>
+	<p class="notice"><%= flash[:notice] %>
+<% end %>
+<% if flash[:error] %>
+	<p class="error"><%= flash[:error] %>
+<% end %>
+
+<section id="add">
+  <form action="/desserts" method="post">
+        <textarea name="number" placeholder="Number&hellip;"></textarea> <br />
+        <textarea name="title" placeholder="Title&hellip;"></textarea> <br />
+        <textarea name="price" placeholder="Price&hellip;"></textarea> <br />  
+        <textarea name="description" placeholder="Description&hellip;"></textarea> <br />
+        <textarea name="image" placeholder="Image Here&hellip;"></textarea> <br />
+    <input type="submit" value="Take Note!">
+  </form>
+</section>
+<% @desserts.each do |desserts| %>
+  <article>
+    <p>
+      <%= desserts.number %>
+      <%= desserts.title %>
+      <%= desserts.description %>
+      <%= desserts.image %>
+    </p>
+  </article>
+<% end %>
