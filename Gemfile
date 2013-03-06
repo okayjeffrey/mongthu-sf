@@ -10,5 +10,3 @@ group :development do
   gem 'dm-sqlite-adapter'
   gem 'do_sqlite3'
 end
-# gem 'sinatra-flash'
-# gem 'sinatra-redirect-with-flash'
