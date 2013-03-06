@@ -9,3 +9,5 @@ else
   require 'do_sqlite3'
   DataMapper.setup :default, "sqlite://#{Dir.pwd}/menu.db"
 end
+DataMapper.auto_upgrade!
+DataMapper.finalize
