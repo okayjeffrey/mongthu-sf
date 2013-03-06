@@ -2,6 +2,30 @@
 
 @teal:#00a7ab;
 
+@highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              "only screen and (min--moz-device-pixel-ratio: 1.5)",
+              "only screen and (-o-min-device-pixel-ratio: 3/2)",
+              "only screen and (min-device-pixel-ratio: 1.5)";              
+@ipad: "only screen and (min-device-width: 768px) and (max-device-width: 1024px)";              
+@iphone "only screen and (max-device-width: 480px)";
+@mobile: "only screen and (max-width: 320px)";
+
+.hide-text {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.static {
+    position:static;
+    z-index:0;
+}
+    
+.relative {
+    position:relative;
+    z-index:1000;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: none;
@@ -14,11 +38,6 @@ body {
     margin:0;
 }
 
-.hide-text {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
-}
 
 h1, h2, h3, h4 {
     color:@teal;
@@ -54,11 +73,6 @@ ol, ul {
         }
     }
     
-    .relative {
-        position:relative;
-        z-index:1000;
-    }
-
 header {
     
     /*    background:#d8f1f2;*/
@@ -76,18 +90,23 @@ header {
         height:202px;
         width:100%;
         background: transparent url(../img/MongThu-logo.png) no-repeat 50% 0;
-        @media screen and (min-width: 400px){
-            position:fixed;
-            z-index:0;
-        }
+        position:fixed;
+        z-index:0;
+       
+        @media only screen and (max-device-width: 480px) { .static; }
+        @media only screen and (max-width: 320px) { .static; }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){ .static; }
+        
         margin:0 auto 80px auto;
     }
     
-    @media screen and (min-width: 400px){
-        .info {
-            margin-top:300px;
-            .relative;
-        }
+    .info {
+        margin-top:300px;
+        .relative;
+
+        @media only screen and (max-device-width: 480px) { margin-top:0px; .static; }
+        @media only screen and (max-width: 320px) { margin-top:0px; .static; }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){ margin-top:0px; .static; }
     }
 
 }
