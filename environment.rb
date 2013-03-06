@@ -4,7 +4,7 @@ require 'data_mapper'
 Dir.glob("./models/*.rb").each{|model| require model}
 
 if ENV['RACK_ENV'] == 'production'
-  DataMapper.setup(:default, ENV['DATABASE_URL'])
+  DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_BRONZE_URL'])
 else
   require 'do_sqlite3'
   DataMapper.setup :default, "sqlite://#{Dir.pwd}/menu.db"
