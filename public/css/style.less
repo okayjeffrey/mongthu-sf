@@ -53,12 +53,20 @@ ol, ul {
             line-height:2em;
         }
     }
+    
+    .relative {
+        position:relative;
+        z-index:1000;
+    }
 
 header {
     
     /*    background:#d8f1f2;*/
-    background: #000 url(../img/soup-hero.png) no-repeat 0 0; 
-    background-size: cover;
+    background: #000 url(../img/soup-hero.png) fixed 50% 0; 
+    
+    @media screen and (min-width: 1000px){
+        background-size: 100%;
+    }
     /*    height:420px;*/
     padding-top:75px;
     /*margin-bottom:60px;*/
@@ -66,9 +74,20 @@ header {
     
     #logo {
         height:202px;
-        width:202px;
+        width:100%;
         background: transparent url(../img/MongThu-logo.png) no-repeat 50% 0;
-        margin:0 auto 75px auto;
+        @media screen and (min-width: 400px){
+            position:fixed;
+            z-index:0;
+        }
+        margin:0 auto 80px auto;
+    }
+    
+    @media screen and (min-width: 400px){
+        .info {
+            margin-top:300px;
+            .relative;
+        }
     }
 
 }
@@ -77,6 +96,7 @@ header {
     width:80%;
     background: rgba(255, 255, 255, 0.8);
     padding:0 10%;
+    .relative;
     
     p {
         margin:0 0 1em 0;
@@ -152,6 +172,7 @@ header {
 }
 
 footer {
+    .relative;
     clear:both;
     .mindful { .info; padding:35px 10%; letter-spacing:0.27em; line-height: 1.6em;}
  
