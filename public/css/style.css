@@ -1,26 +1,45 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
 @iphone "only screen and (max-device-width: 480px)";
-/* line 13, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000313}}
+/* line 14, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000314}}
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 19, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000319}}
+/* line 20, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000320}}
 .static {
   position: static;
   z-index: 0;
 }
-/* line 24, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000324}}
+/* line 25, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000325}}
 .relative {
   position: relative;
   z-index: 1000;
 }
-/* line 29, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000329}}
+/* line 30, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000330}}
+a {
+  text-decoration: none;
+  color: #00a7ab;
+}
+/* line 34, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000334}}
+a:hover {
+  text-decoration: underline;
+  color: #046e71;
+}
+@media only screen and (max-device-width: 480px) {
+  /* line 36, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000336}}
+  a {
+    color: #046e71;
+  }
+}
+/* line 39, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000339}}
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: none;
@@ -35,8 +54,8 @@ body {
 
   margin: 0;
 }
-/* line 42, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000342}}
+/* line 52, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000352}}
 h1,
 h2,
 h3,
@@ -45,22 +64,22 @@ h4 {
   text-transform: uppercase;
   margin-top: 0;
 }
-/* line 48, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000348}}
+/* line 58, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000358}}
 ol,
 ul {
   list-style-position: outside;
   padding: 0;
   font-weight: bold;
 }
-/* line 54, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000354}}
+/* line 64, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000364}}
 ol li span,
 ul li span {
   font-weight: normal;
 }
-/* line 58, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000358}}
+/* line 68, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000368}}
 .info {
   background: #d8f1f2;
   /*        margin:auto;*/
@@ -73,70 +92,72 @@ ul li span {
   letter-spacing: 0.3em;
   font-size: 0.90em;
 }
-/* line 69, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000369}}
+/* line 79, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000379}}
 .info span {
   margin: 0 20px;
   display: inline-block;
   line-height: 2em;
 }
-/* line 76, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000376}}
+/* line 86, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000386}}
 header {
-  background: #000000 url(../img/soup-hero.png) fixed 50% 0;
-  padding-top: 75px;
+  background: #000000 url(../img/soup-hero.jpg) fixed 50% -100px;
+  padding-top: 45px;
 }
-@media screen and (min-width: 1000px) {
-  /* line 80, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000380}}
+@media screen and (min-width: 620px) {
+  /* line 89, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000389}}
   header {
     background-size: 100%;
   }
 }
-/* line 86, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000386}}
+/* line 95, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000395}}
 header #logo {
   height: 202px;
   width: 100%;
   background: transparent url(../img/MongThu-logo.png) no-repeat 50% 0;
   position: fixed;
   z-index: 0;
-  margin: 0 auto 80px auto;
 }
 @media only screen and (max-device-width: 480px) {
-  /* line 93, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000393}}
+  /* line 102, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003102}}
   header #logo {
     position: static;
     z-index: 0;
+    margin-bottom: 60px;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 94, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000394}}
+  /* line 103, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003103}}
   header #logo {
     position: static;
     z-index: 0;
+    margin-bottom: 60px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 95, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000395}}
-  header #logo {
-    position: static;
-    z-index: 0;
-  }
-}
-/* line 100, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003100}}
-header .info {
-  margin-top: 300px;
-  position: relative;
-  z-index: 1000;
-}
-@media only screen and (max-device-width: 480px) {
   /* line 104, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003104}}
+  header #logo {
+    position: static;
+    z-index: 0;
+    margin-bottom: 60px;
+  }
+}
+/* line 108, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003108}}
+header .info {
+  margin-top: 250px;
+  position: relative;
+  z-index: 1000;
+}
+@media only screen and (max-device-width: 480px) {
+  /* line 112, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003112}}
   header .info {
     margin-top: 0px;
     position: static;
@@ -144,8 +165,8 @@ header .info {
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 105, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003105}}
+  /* line 113, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003113}}
   header .info {
     margin-top: 0px;
     position: static;
@@ -153,127 +174,136 @@ header .info {
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 106, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003106}}
+  /* line 114, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003114}}
   header .info {
     margin-top: 0px;
     position: static;
     z-index: 0;
   }
 }
-/* line 111, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003111}}
+/* line 119, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003119}}
 #main {
   width: 80%;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   padding: 0 10%;
+  display: inline-block;
   position: relative;
   z-index: 1000;
 }
-/* line 117, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003117}}
+/* line 126, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003126}}
 #main p {
   margin: 0 0 1em 0;
 }
-/* line 121, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003121}}
+/* line 130, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003130}}
 #main section.menu {
   max-width: 910px;
   margin: 0 auto;
 }
-/* line 125, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003125}}
+/* line 134, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003134}}
 #main section.menu article {
   margin-top: 30px;
 }
 @media screen and (min-width: 400px) {
-  /* line 128, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003128}}
+  /* line 137, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003137}}
   #main section.menu article {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
-/* line 132, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003132}}
+/* line 141, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003141}}
 #main section.menu article.sandwiches {
   float: left;
   width: 45%;
   min-width: 270px;
 }
-/* line 138, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003138}}
+/* line 147, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003147}}
 #main section.menu article.soups {
   float: left;
   width: 45%;
   min-width: 270px;
   margin-right: 10%;
 }
-/* line 143, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003143}}
+/* line 152, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003152}}
 #main section.menu article.desserts {
   float: left;
   clear: both;
   width: 100%;
+  margin-top: 40px;
 }
 @media screen and (min-width: 400px) {
-  /* line 149, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003149}}
+  /* line 159, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003159}}
   #main section.menu article.desserts ul {
     -webkit-column-count: 2;
     -webkit-column-gap: 60px;
   }
 }
-/* line 154, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003154}}
+/* line 164, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003164}}
 #main section.menu article.desserts ul li {
   -webkit-column-break-inside: avoid;
 }
-/* line 160, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003160}}
+/* line 170, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003170}}
 #main section.menu article:last-child {
   margin-bottom: 40px;
 }
 @media screen and (min-width: 400px) {
-  /* line 162, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003162}}
+  /* line 172, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003172}}
   #main section.menu article:last-child {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
-/* line 167, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003167}}
+/* line 177, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003177}}
 #main section.menu article .picture {
   background: transparent url(../img/icon-photo.png) no-repeat 50% 50%;
   display: inline-block;
   width: 20px;
   opacity: 0.8;
 }
-/* line 173, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003173}}
+/* line 183, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003183}}
 #main section.menu article .picture:hover {
   opacity: 1.0;
 }
-/* line 178, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003178}}
+@media screen and (max-width: 760px) {
+  /* line 187, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003187}}
+  #main section.menu article .picture {
+    display: none;
+  }
+}
+/* line 192, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003192}}
 #main section.menu article img.soups {
   /*                display:none;*/
 
 }
-/* line 183, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003183}}
+/* line 197, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003197}}
 #main section.menu ul {
   list-style: none;
   font-weight: normal;
 }
-/* line 190, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003190}}
+/* line 204, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003204}}
 footer {
   position: relative;
   z-index: 1000;
   clear: both;
 }
-/* line 193, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003193}}
+/* line 207, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003207}}
 footer .mindful {
   background: #d8f1f2;
   /*        margin:auto;*/
@@ -289,27 +319,32 @@ footer .mindful {
   letter-spacing: 0.27em;
   line-height: 1.6em;
 }
-/* line 69, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000369}}
+/* line 79, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000379}}
 footer .mindful span {
   margin: 0 20px;
   display: inline-block;
   line-height: 2em;
 }
-/* line 195, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003195}}
+/* line 209, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003209}}
 footer .social {
   padding: 40px 0;
   text-align: center;
 }
-/* line 200, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003200}}
+/* line 214, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003214}}
+footer .social a:hover {
+  opacity: 0.6;
+}
+/* line 217, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003217}}
 footer .social img {
   margin: 1em 30px;
   vertical-align: middle;
 }
-/* line 203, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003203}}
+/* line 220, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\00003220}}
 footer .vietnam {
   background-color: #91857f;
   color: #fff;

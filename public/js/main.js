@@ -8,7 +8,7 @@ $(document).ready(function() {
        position: 'right',
        theme: '.tooltipster-light',
        touchDevices: true,
-       trigger: 'hover',
+       trigger: 'hover'
     });
     
 });

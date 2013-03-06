@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
 
 @teal:#00a7ab;
+@link:#046e71;
 
 @highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
               "only screen and (min--moz-device-pixel-ratio: 1.5)",
@@ -24,6 +25,15 @@ overflow: hidden;
 .relative {
     position:relative;
     z-index:1000;
+}
+
+a {
+    text-decoration:none;
+    color:@teal;
+    
+    &:hover { text-decoration:underline; color:@link;}
+
+    @media only screen and (max-device-width: 480px) { color:@link; }
 }
 
 body {
@@ -75,12 +85,11 @@ ol, ul {
     
 header {
     
-    background: #000 url(../img/soup-hero.png) fixed 50% 0; 
-    
-    @media screen and (min-width: 1000px){
+    background: #000 url(../img/soup-hero.jpg) fixed 50% -100px; 
+    @media screen and (min-width: 620px){
         background-size: 100%;
     }
-    padding-top:75px;
+    padding-top:45px;
     
     
     #logo {
@@ -90,15 +99,14 @@ header {
         position:fixed;
         z-index:0;
        
-        @media only screen and (max-device-width: 480px) { .static; }
-        @media only screen and (max-width: 320px) { .static; }
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){ .static; }
-        
-        margin:0 auto 80px auto;
+        @media only screen and (max-device-width: 480px) { .static; margin-bottom:60px;}
+        @media only screen and (max-width: 320px) { .static; margin-bottom:60px;}
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){ .static; margin-bottom:60px;}
+                
     }
     
     .info {
-        margin-top:300px;
+        margin-top:250px;
         .relative;
 
         @media only screen and (max-device-width: 480px) { margin-top:0px; .static; }
@@ -110,8 +118,9 @@ header {
 
 #main {
     width:80%;
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff;
     padding:0 10%;
+    display:inline-block;
     .relative;
     
     p {
@@ -126,7 +135,7 @@ header {
             margin-top:30px;
 
             @media screen and (min-width: 400px){
-                margin-top:60px;
+                margin-top:50px;
             }
             
             &.sandwiches {
@@ -144,6 +153,7 @@ header {
                 float:left;
                 clear:both;
                 width:100%;
+                margin-top:40px;
                 
                 ul { 
                     @media screen and (min-width: 400px){
@@ -160,7 +170,7 @@ header {
             &:last-child {
                 margin-bottom:40px;
                 @media screen and (min-width: 400px){
-                    margin-bottom:60px;
+                    margin-bottom:50px;
                 }
             }
             
@@ -172,6 +182,10 @@ header {
                 
                 &:hover {
                     opacity:1.0;
+                }
+                
+                @media screen and (max-width: 760px){
+                 display:none;   
                 }
             }
             
@@ -196,7 +210,10 @@ footer {
         padding:40px 0;
         text-align:center;
         
-        a { }
+        a { 
+            &:hover{ opacity:0.6; }
+        }
+        
         img {margin:1em 30px; vertical-align:middle;}
     }
         

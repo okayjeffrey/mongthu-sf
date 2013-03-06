@@ -277,14 +277,22 @@ html {
 }
 
 .tooltipster-light {
-	border-radius: 5px; 
-	border: 1px solid #cccccc;
-	background: #ededed;
+	border-radius: 500px; 
+	border: 8px solid #92857f;
+	background: #92857f;
 	color: #666666;
 }
 .tooltipster-light .tooltipster-content {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
-	line-height: 16px;
-	padding: 8px 10px;
+	line-height: 14px;
+/*    padding: 8px 10px;*/
+    border-radius: 500px; 
+    height:300px;
+    width:300px;
+    overflow:hidden;
+}
+
+.tooltipster-light .tooltipster-content img {
+    width:300px;
 }
