@@ -1,7 +1,7 @@
 class Sandwich
   include DataMapper::Resource
   property :id, Serial
-  property :number, String, :required => true
+  property :number, Integer, :required => true
   property :title,  Text,  :required => true
   property :price, String, :required => true
   property :description, Text, :required => false

@@ -1,7 +1,7 @@
 class Dessert
   include DataMapper::Resource
   property :id, Serial
-  property :number, String, :required => false
+  property :number, Integer, :required => false
   property :title,  Text,  :required => true
   property :price, String, :required => true
   property :description, Text, :required => true
