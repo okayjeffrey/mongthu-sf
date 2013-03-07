@@ -95,9 +95,14 @@ header {
     #logo {
         height:202px;
         width:100%;
-        background: transparent url(../img/MongThu-logo.png) no-repeat 50% 0;
+        background: transparent url(../img/MongThu-logo.png) no-repeat 50% 50%;
         position:fixed;
         z-index:0;
+        
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5){ background-image:url(../img/MongThu-logo@2x.png); background-size: 202px; }
+        @media only screen and (min--moz-device-pixel-ratio: 1.5){ background-image:url(../img/MongThu-logo@2x.png); background-size: 202px;}
+        @media only screen and (-o-min-device-pixel-ratio: 3/2){ background-image:url(../img/MongThu-logo@2x.png); background-size: 202px;}
+        @media only screen and (min-device-pixel-ratio: 1.5){ background-image:url(../img/MongThu-logo@2x.png); background-size: 202px;}
        
         @media only screen and (max-device-width: 480px) { .static; margin-bottom:60px;}
         @media only screen and (max-width: 320px) { .static; margin-bottom:60px;}
@@ -183,6 +188,11 @@ header {
                 &:hover {
                     opacity:1.0;
                 }
+                
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5){ background-image:url(../img/icon-photo@2x.png); background-size: 16px 13px; }
+                @media only screen and (min--moz-device-pixel-ratio: 1.5){ background-image:url(../img/icon-photo@2x.png); background-size: 16px 13px;}
+                @media only screen and (-o-min-device-pixel-ratio: 3/2){ background-image:url(../img/icon-photo@2x.png); background-size: 16px 13px;}
+                @media only screen and (min-device-pixel-ratio: 1.5){ background-image:url(../img/icon-photo@2x.png); background-size: 16px 13px;}
                 
                 @media screen and (max-width: 760px){
                  display:none;   
