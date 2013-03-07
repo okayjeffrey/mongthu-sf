@@ -101,7 +101,7 @@ ul li span {
 /* line 86, /Users/jeffreylarrimore/Development/MongThuSF/public/css/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jeffreylarrimore\/Development\/MongThuSF\/public\/css\/style\.less}line{font-family:\0000386}}
 header {
-  background: #000000 url(../img/soup-hero.jpg) fixed 50% -150px;
+  background: #00a7ab url(../img/soup-hero.jpg) fixed 50% -150px;
   padding-top: 45px;
 }
 @media screen and (min-width: 750px) {
