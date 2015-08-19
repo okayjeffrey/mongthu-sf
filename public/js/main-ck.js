@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".tooltip").tooltipster({animation:"fade",delay:200,onlyOne:!0,position:"right",theme:".tooltipster-light",touchDevices:!0,trigger:"hover"})});
