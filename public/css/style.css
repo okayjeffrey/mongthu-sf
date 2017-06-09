@@ -32,6 +32,11 @@ a:hover {
   color: #046e71;
 }
 @media only screen and (max-device-width: 480px) {
+  .m-flex {
+    display: flex;
+    align-items:center;
+  }
+ 
   a {
     color: #046e71;
   }
