@@ -274,23 +274,23 @@ header .info {
     margin-top: 50px;
   }
 }
-#main section.menu article.sandwiches {
+#main section.menu article.sandwiches, #main section.menu article.desserts {
   float: left;
   width: 45%;
   min-width: 270px;
 }
-#main section.menu article.soups {
+#main section.menu article.soups, #main section.menu article.specials {
   float: left;
   width: 45%;
   min-width: 270px;
   margin-right: 10%;
 }
-#main section.menu article.desserts {
+/* #main section.menu article.desserts {
   float: left;
   clear: both;
   width: 100%;
   margin-top: 40px;
-}
+} */
 @media screen and (min-width: 400px) {
 /*   #main section.menu article.desserts ul {
     -webkit-column-count: 2;
