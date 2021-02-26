@@ -254,7 +254,7 @@ header .info {
   width: 80%;
   background: #fff;
   padding: 0 10%;
-  display: inline-block;
+/*   display: inline-block; */
   position: relative;
   z-index: 1000;
 }
@@ -358,6 +358,8 @@ footer {
   position: relative;
   z-index: 1000;
   clear: both;
+  padding-top:64px;
+  background-color:white;
 }
 footer .mindful {
   background: #d8f1f2;
