@@ -384,6 +384,7 @@ footer .mindful span {
 footer .social {
   padding: 40px 0;
   text-align: center;
+  overflow: hidden;
 }
 footer .social a:hover {
   opacity: 0.6;
