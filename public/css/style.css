@@ -26,18 +26,19 @@
 }
 a {
   text-decoration: none;
-  color: #00a7ab;
+  color: inherit;
 }
 a:hover {
   color: #046e71;
+  text-decoration: underline;
 }
-@media only screen and (max-device-width: 480px) {
+/* @media only screen and (max-device-width: 480px) {
   a {
     color: #046e71;
   }
-}
+} */
 body {
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: auto;
   -webkit-overflow-scrolling: none;
   /*    background: #fff url(../img/mongthu_frame.png) no-repeat 50% 0;*/
 
@@ -70,12 +71,10 @@ ul li span {
 }
 .info {
   background: #d8f1f2;
-  /*        margin:auto;*/
-
   text-align: center;
   padding: 20px 5%;
   text-transform: uppercase;
-  color: #00a7ab;
+  color: #016D70;
   font-weight: 400;
   letter-spacing: 0.25em;
   font-size: 1.03em;
@@ -368,7 +367,7 @@ footer .mindful {
   text-align: center;
   padding: 20px 5%;
   text-transform: uppercase;
-  color: #00a7ab;
+  color: #016D70;
   font-weight: 400;
   letter-spacing: 0.25em;
   font-size: 1.03em;
@@ -381,21 +380,58 @@ footer .mindful span {
   display: inline-block;
   line-height: 2em;
 }
-footer .social {
+footer .press {
   padding: 40px 0;
   text-align: center;
   overflow: hidden;
 }
-footer .social a:hover {
+footer .press a:hover {
   opacity: 0.6;
 }
-footer .social img {
+footer .press img {
   margin: 1em 30px;
   vertical-align: middle;
 }
-footer .vietnam {
+footer .social {
   background-color: #91857f;
+  margin:0;
+  padding:0;
+  /* font-weight: 600; */
+}
+footer .social .social-wrap {
   color: #fff;
-  padding: 50px 0;
+  padding: 50px;
+  text-transform: uppercase;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  footer .social .social-wrap {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+footer .social-wrap > * {
+  margin: 24px;
+  width: 159px;
+}
+footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+}
+
+.social-icons img {
+  height:32px;
+  width: 32px;
 }
