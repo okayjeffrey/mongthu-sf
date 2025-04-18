@@ -435,3 +435,8 @@ footer .social-icons {
   height:32px;
   width: 32px;
 }
+
+  .sub-list {
+    padding-left: 20px; /* Add some indentation for the sub-list */
+    list-style-type: upper-latin;
+  }
