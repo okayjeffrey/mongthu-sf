@@ -5,7 +5,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<!-- Goat Counter -->
-<script data-goatcounter="https://complaints.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+	<script>
+    // Append to the <body>; can use a CSS selector to append somewhere else.
+    window.goatcounter.visit_count({append: 'body'})
+</script>
+<script data-goatcounter="https://complaints.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 	<!-- Git outta here -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
